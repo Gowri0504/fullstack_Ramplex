@@ -1,13 +1,14 @@
-const mongoose=require('mongoose');
-const FoodSchema=new mongoose.Schema({
-    foodname:{
-        type:String,
-        required:true           
-    },
-    daySinceIAte:{
-        type:Number,
-        required:true
-    }
+const mongoose = require("mongoose");
+
+const FoodSchema = new mongoose.Schema({
+  foodName: {
+    type: String,
+    required: true,
+  },
+  days: {
+    type: Number,
+    required: true,
+  },
 });
 
-module.exports=mongoose.model("Food",FoodSchema);
+module.exports = mongoose.model("Food", FoodSchema);
